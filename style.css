@@ -1,0 +1,82 @@
+*{
+    font-family: 'Calibri', sans-serif;
+}
+
+body{
+    background-color: rgb(203, 255, 255);
+}
+
+h1{
+    color: rgb(8, 104, 110);
+    text-align: center;
+}
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.field{
+    width: 500px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(8, 104, 110);
+}
+
+textarea{
+    width: 100%;
+    font-size: 1rem;
+    color: rgb(8, 104, 110);
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid rgb(8, 104, 110);
+    outline: none;
+    resize: none;
+}
+
+.counter{
+    font-size: 1.2rem;
+    color: rgb(8, 104, 110);
+}
+
+#toggle{
+    background-color: rgb(8, 104, 110);
+    color: #fff;
+    font-size: 1.2rem;
+    border: 1px solid rgb(8, 104, 110);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    box-shadow: 0 3px 5px rgb(8, 104, 110);
+}
+
+#toggle:hover{
+    background-color: rgb(120, 255, 255);
+    color: rgb(8, 104, 110);
+    border: 1px solid rgb(120, 255, 255);
+}
+
+@media only screen and (max-width: 600px){
+    .container{ 
+        margin-left: -10px;
+    }
+
+    .field{
+        width: 260px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+}
